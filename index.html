@@ -85,6 +85,13 @@
         button:hover {
             background-color: #388e3c;
         }
+        
+        .success-message {
+            display: none;
+            color: #2e7d32;
+            font-weight: bold;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -139,7 +146,13 @@
         
         <div class="registration-form">
             <h2>REGISTRATION</h2>
-            <form id="registrationForm" action="mailto:graham_cooper@shaw.ca" method="post" enctype="text/plain">
+            <form id="registrationForm" action="https://formsubmit.co/graham_cooper@shaw.ca" method="POST">
+                <!-- Add these hidden fields for FormSubmit -->
+                <input type="hidden" name="_subject" value="New Junior Tennis Program Registration">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Replace with your thank you page URL -->
+                <input type="hidden" name="_captcha" value="false">
+                
                 <div class="form-group">
                     <label for="childName">CHILD'S NAME:</label>
                     <input type="text" id="childName" name="childName" required>
@@ -216,11 +229,25 @@
                 </div>
                 
                 <button type="submit">Submit Registration</button>
+                <div id="successMessage" class="success-message">
+                    Thank you! Your registration has been submitted successfully.
+                </div>
             </form>
             
             <p>When the above information is returned, waiver and media forms will be sent to the parents along with directions regarding payment for the lessons.</p>
             <p>Please return all information to graham_cooper@shaw.ca</p>
         </div>
     </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            // Optional: You can add form validation here
+            // If everything is valid, show success message
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // The form will still submit to FormSubmit
+            // If you want to prevent default submission and use AJAX instead, you can do that here
+        });
+    </script>
 </body>
 </html>
