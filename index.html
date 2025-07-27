@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vernon Tennis Association - Junior Development Program</title>
+    <style>
+        body {
+            background-color: #e8f5e9; /* Light green background */
+            color: #000000; /* Black text */
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .program-info {
+            margin-bottom: 20px;
+        }
+        
+        .session {
+            margin-left: 20px;
+        }
+        
+        .registration-form {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f1f8e9;
+            border-radius: 5px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .radio-group {
+            margin: 10px 0;
+        }
+        
+        .radio-option {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        button:hover {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VERNON TENNIS ASSOCIATION</h1>
+        <h2>JUNIOR DEVELOPMENT PROGRAM LESSONS</h2>
+        <h3>SUMMER 2025</h3>
+        
+        <div class="program-info">
+            <p>We are pleased to once again offer lessons for our Vernon youth in July and August. The focus of the summer program is on skill development and learning to play tennis. Tournaments will be set up to give players the opportunity to play. More information about the planned tournament will follow.</p>
+        </div>
+        
+        <h2>SUMMER PROGRAM INFORMATION</h2>
+        <p><strong>Location</strong> – Sawicki Park - 996 Middleton Way. Vernon.</p>
+        
+        <h3>Red Ball (Players ages 6 to 8 and those designated to play at this level)</h3>
+        <div class="session">
+            <p>– Session 1 – Monday to Friday – July 7, 8, 9, 10 and 11 – 8:30 to 9:30</p>
+            <p>– Session 2 – Friday to Friday – August 1,5,6,7 and 8 – 8:30 to 9:30</p>
+        </div>
+        
+        <h3>Orange Ball (Players ages 8 to 10 and those designated to play at this level).</h3>
+        <div class="session">
+            <p>– Session 1 – Monday to Friday – July 7, 8, 9, 10 and 11 – 9:45 – 11:00</p>
+            <p>– Session 2 – Friday to Friday – August 1,5,6,7 and 8 – 9:45 – 11:00</p>
+        </div>
+        
+        <h3>Green Dot Ball (Players ages 10 and 12 and those designated to play at this level).</h3>
+        <div class="session">
+            <p>– Session 1 – Monday to Friday – July 14, 15, 16, 17 and 18 – 8:30-10:00</p>
+            <p>– Session 2 – Monday to Friday – August 11,12,13, 14 and 15 – 8:30-10:00</p>
+        </div>
+        
+        <h3>Regular Ball (For players 12 and over)</h3>
+        <div class="session">
+            <p>– Session 1 – Monday to Friday – July 14, 15, 16, 17 and 18 – 10:10 - 12:00</p>
+            <p>– Session 2 – Monday to Friday – August 11,12,13, 14 and 15 – 10:10 - 12:00</p>
+        </div>
+        
+        <h2>Cost</h2>
+        <p>The cost for this program is:</p>
+        <p>For players registered with the VTA spring program</p>
+        <ul>
+            <li>$45 for the 5 one hour lessons for red ball and orange ball.</li>
+            <li>$70 for the 5 one and a half hour lessons for green dot and regular ball players.</li>
+        </ul>
+        
+        <p><strong>NOTE</strong> – As players need to be registered with the VTA, there is a $10 fee to cover insurance and club membership with Tennis BC. This enables our association to partake in Tennis BC programs and activities.</p>
+        
+        <h3>Payment for the lessons.</h3>
+        <p>Payment for lessons will not be required until a week prior to the lesson commencing. Direction for the payment will be given at that time.</p>
+        
+        <div class="registration-form">
+            <h2>REGISTRATION</h2>
+            <form id="registrationForm" action="mailto:graham_cooper@shaw.ca" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="childName">CHILD'S NAME:</label>
+                    <input type="text" id="childName" name="childName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">AGE:</label>
+                    <input type="number" id="age" name="age" required min="6">
+                </div>
+                
+                <div class="form-group">
+                    <label>PROGRAM (PLEASE CHECK ONE):</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="red" name="program" value="Red Ball" required>
+                            <label for="red">RED</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="orange" name="program" value="Orange Ball">
+                            <label for="orange">ORANGE</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="green" name="program" value="Green Dot Ball">
+                            <label for="green">GREEN</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="regular" name="program" value="Regular Ball">
+                            <label for="regular">REGULAR</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>PROGRAM SELECTION:</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="july" name="session" value="July" required>
+                            <label for="july">JULY</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="august" name="session" value="August">
+                            <label for="august">AUGUST</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>HAS YOUR CHILD TAKEN LESSONS PREVIOUSLY:</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="yes" name="previousLessons" value="Yes" required>
+                            <label for="yes">YES</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="no" name="previousLessons" value="No">
+                            <label for="no">NO</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="parentName">PARENT NAME:</label>
+                    <input type="text" id="parentName" name="parentName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">PHONE:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <button type="submit">Submit Registration</button>
+            </form>
+            
+            <p>When the above information is returned, waiver and media forms will be sent to the parents along with directions regarding payment for the lessons.</p>
+            <p>Please return all information to graham_cooper@shaw.ca</p>
+        </div>
+    </div>
+</body>
+</html>
